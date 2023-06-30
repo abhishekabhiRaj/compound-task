@@ -1,0 +1,14 @@
+.compound-market .image{
+    background: var(--bg-active);
+    width: max-content;
+    padding: 8px 16px;
+    border-radius: 999px;
+}
+.compound-market .image img{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.compound-market .image img:nth-child(2){
+    margin-left: -5px;
+}

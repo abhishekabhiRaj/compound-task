@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+:root{
+    --bg-dark:#0D131A;
+    --bg-active:#ffffff24;
+    --color_1: #62d496;
+    --color_2: #804de8;
+    --white: #516070;
+    --light-white: #51607028;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    transition: 0.2s ease-in-out;
+}
+
+body{
+    background: var(--bg-dark);
+}
+
+.compound-text-small{
+    font-size: 12px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.text-color_1{
+    color: var(--color_1) !important;
+}
+.text-color_2{
+    color: var(--color_2) !important;
+}
+
+.compound-card-bg{
+    background: #1d2833;
+    padding: 48px;
+    border-radius: 12px;
+}
+
+.rdt_TableHeadRow{
+    background: transparent !important;
+    border: none !important;
+    color: rgba(255,255,255,.5)!important;
+}
+
+.rdt_Table{
+    background: transparent !important;
+}
+
+.rdt_TableRow{
+    background: transparent !important;
+    border-bottom: 0px !important;
+    color: #fff !important;
+    margin-bottom: 32px !important;
+}
+
+.progress-bar{
+    background-color: var(--color_1) !important;
+}
+
+.progress, .progress-stacked{
+    height: 4px !important;
+    border-radius: 2px !important;
+}
+
+.compound-disabled-btn{
+    background: transparent;
+    border-radius: 999px;
+    border: none;
+    color: var(--white);
+    font-size: 14px;
+    /* border: 1px solid rgba(255,255,255,.5); */
+    padding: 10px 15px;
+    font-weight: 600;
+    background: var(--light-white);
+}
+.hr-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+}
+
+.tool{
+    position: absolute;
+    top: 40px;
+    width: 200px;
+    height: 130px;
+    background-color: #1d2833;
+    box-shadow: 0px 0px 20px #131c24;
+    opacity: 0;
+    z-index: 11;
+    padding: 16px !important;
+    transition: 0.2s linear;
+}
+
+.tool-div{
+    cursor: pointer;
+}
+
+.tool-div:hover .tool{ 
+    opacity: 1 !important;
+}
+
+
+@media(max-width:767.98px){
+    .mobile-hide{
+        display: none !important;
+    }
 }
